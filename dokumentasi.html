@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dokumentasi | Portofolio Digital Seminar PPG</title>
+  <meta name="description" content="Dokumentasi kegiatan praktik mengajar, pembelajaran bengkel otomotif, dan kegiatan sekolah selama PPG.">
+  <meta name="author" content="Wahyudin">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="dokumentasi">
+  <main id="konten">
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <span class="chip chip--accent">Dokumentasi Kegiatan</span>
+        <h1>Dokumentasi</h1>
+        <p class="page-hero__lead">Galeri dokumentasi kegiatan selama PPG: praktik mengajar, pembelajaran bengkel otomotif, serta keterlibatan dalam kegiatan sekolah dan seminar.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-bottom:0">
+      <div class="container">
+        <div class="mk-tabs" data-dok-tabs>
+          <button type="button" class="mk-tab is-active" data-dok-tab="foto">Foto</button>
+          <button type="button" class="mk-tab" data-dok-tab="video">Video</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-dok-panel="foto">
+      <div class="container container--wide">
+        <div class="note reveal" style="margin-bottom:34px">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+          <p>Setiap dokumentasi dilengkapi deskripsi dan hubungan dengan refleksi. Foto/video dapat ditambahkan di folder <code>assets/img/dokumentasi/</code>. Jika belum tersedia, akan ditampilkan keterangan placeholder.</p>
+        </div>
+        <div data-dokumentasi></div>
+      </div>
+    </section>
+
+    <section class="section section--tint" data-dok-panel="video" hidden>
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Video</span>
+          <h2>Video Pembelajaran CASEL</h2>
+          <p class="lead">Video pembelajaran terkait kerangka CASEL (Collaborative for Academic, Social, and Emotional Learning) sebagai pendukung pengembangan kompetensi sosial emosional.</p>
+        </div>
+        <div class="video-wrap reveal">
+          <iframe data-src="https://www.youtube.com/embed/bjIurousiAA?autoplay=1&mute=1&playsinline=1&rel=0" title="Video Pembelajaran CASEL" loading="lazy" allowfullscreen allow="autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <p class="video-note reveal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+          Video mulai terputar otomatis saat tampil. Jika tidak muncul, tonton langsung: <a href="https://www.youtube.com/watch?v=bjIurousiAA" target="_blank" rel="noopener">Video Pembelajaran CASEL di YouTube</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" data-dok-panel="video" hidden>
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Video Kegiatan</span>
+          <h2>Dokumentasi Video Kegiatan</h2>
+          <p class="lead">Video kegiatan pembelajaran dan praktik selama PPG. Klik tombol play untuk memutar.</p>
+        </div>
+        <div data-dok-videos class="stack"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/components.js"></script>
+</body>
+</html>
